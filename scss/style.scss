@@ -1,0 +1,50 @@
+@import "mixins";
+@import "variables";
+
+.indent {
+  padding: 0;
+  margin: 0;
+}
+
+
+
+header {
+  background-color: whitesmoke;
+  padding: 2% 0;
+}
+
+header {
+  .navbar-toggler {
+    &:active, &:focus {
+      outline: none;
+    }
+  }
+  .icon-three-bars {
+    color: black;
+    font-size: 2em;
+  }
+
+  .active-nav {
+    background-color: grey;
+  }
+
+  .navigation {
+    margin: 0 5px 10px;
+
+    &:hover {
+      background-color: grey;
+    }
+
+    .menu-item {
+      font-size: 16px;
+      text-transform: uppercase;
+      color: black;
+
+      &:hover {
+        background-color: grey;
+        color: white;
+      }
+    }
+  }
+}
+
