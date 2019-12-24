@@ -13,23 +13,16 @@
     font-weight: normal;
     font-style: normal;
 }
-@font-face {
-    font-family: "ArialMT";
-    src: url("../fonts/ArialMT.otf");
-    font-style: normal;
-    font-weight: normal;
-}
-
 html,body                       { width:100%; height:100%; }
-body                            { padding:0; margin:0; font:16px ArialMT, Calibri, arial, Tahoma, sans-serif;  color:#424146; }
+body                            { padding:0; margin:0; font:16px Arial, Calibri, arial, Tahoma, sans-serif;  color:#424146; }
 div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,input,textarea {
     padding:0;
     margin:0;
     outline:none;
     list-style:none;
 }
-p                              { font: 16px ArialMT, Calibri, arial, Tahoma, sans-serif; line-height: 1.5; }
-select, input, textarea        { font: 20px ArialMT, Calibri, arial, Tahoma, sans-serif; vertical-align:middle; }
+p                              { font: 16px Arial, Calibri, arial, Tahoma, sans-serif; line-height: 1.5; }
+select, input, textarea        { font: 20px Arial, Calibri, arial, Tahoma, sans-serif; vertical-align:middle; }
 textarea                       { vertical-align:top; }
 :focus                         { outline:none; }
 input[type=submit]             { cursor:pointer; }

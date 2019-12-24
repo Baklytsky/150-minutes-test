@@ -5,29 +5,27 @@
 header {
   background-color: transparent;
   padding: 2% 0;
-  position: relative;
+  position: absolute;
+  width: 100%;
   z-index: 1; }
 
 header .active-nav {
-  color: #e1215f; }
+  color: #E1215F; }
 header .line {
   border-bottom: 2px solid #CACACA; }
-header .icons {
-  display: none; }
-  header .icons .header-icons {
-    width: 23px;
-    height: 23px;
-    color: #FFF;
-    background-color: #CACACA;
-    padding: 5px 5px 3px;
-    margin-right: 10px;
-    border: 1px solid #CACACA;
-    border-radius: 100%;
-    opacity: 0.7;
-    transition: all .3s linear; }
-    header .icons .header-icons:hover {
-      color: #e1215f;
-      opacity: 1; }
+header .icons .header-icons {
+  width: 23px;
+  height: 23px;
+  color: #FFF;
+  background-color: #CACACA;
+  padding: 5px 5px 3px;
+  margin-right: 10px;
+  border: 1px solid #CACACA;
+  border-radius: 100%;
+  opacity: 0.7;
+  transition: all .3s linear; }
+  header .icons .header-icons:hover {
+    opacity: 1; }
 header .navbar-toggler:active, header .navbar-toggler:focus {
   outline: none; }
 header .icon-three-bars {
@@ -37,52 +35,82 @@ header .navigation {
   margin: 0 5px 10px; }
   header .navigation .menu-item {
     font-family: 'PT Sans', sans-serif;
-    font-size: 1em;
+    font-size: 0.8em;
     text-transform: uppercase;
-    color: #465a64; }
+    color: #465A64;
+    transition: all .3s linear; }
     header .navigation .menu-item:hover {
-      color: #e1215f; }
+      color: #E1215F; }
 
 .bg-section {
-  background-image: url("../img/layer_5.png");
-  height: 50vh;
-  position: absolute;
-  top: 0;
-  overflow: hidden; }
+  background: url("../img/bg.png") no-repeat center top/cover;
+  height: 80vh; }
   .bg-section .section-title {
     position: relative;
-    top: 40%; }
+    top: 45%; }
     .bg-section .section-title .headline {
       font-family: 'TrebuchetMS', sans-serif;
       font-size: 1.5em;
       font-weight: 700;
       color: #256988;
-      text-shadow: 0 2px 0 #FFF; }
+      text-shadow: 0 2px 0 #C6CDB5; }
     .bg-section .section-title .section-btn {
       font-family: 'TrebuchetMS', sans-serif;
       font-size: 1.5em;
       font-weight: 700;
       color: #FFF;
-      background-color: #ef3c83;
-      padding: 10px 50px;
-      border: 1px solid #ef3c83;
-      border-radius: 30px; }
+      background-color: #EF3C83;
+      padding: 10px 45px;
+      border: 1px solid #EF3C83;
+      border-radius: 30px;
+      transition: all .3s linear; }
       .bg-section .section-title .section-btn:hover {
-        color: #e1215f;
-        background-color: #465a64; }
+        color: #E1215F;
+        background-color: #F2743E;
+        border: 1px solid #F2743E; }
 
-.courses {
-  position: relative;
-  top: 35%; }
-  .courses .courses-gh {
-    width: 70%; }
-    .courses .courses-gh .courses-text {
-      font-size: 1em;
-      color: #5f8495;
-      text-align: justify; }
-    .courses .courses-gh .gh {
-      font-size: 1em;
-      font-weight: 700;
-      color: #5f8495; }
+.courses .courses-gh {
+  padding: 0 5%; }
+  .courses .courses-gh .courses-text {
+    font-size: 1em;
+    color: #4C7689; }
+  .courses .courses-gh .gh {
+    font-size: 1em;
+    font-weight: 700;
+    color: #4C7689; }
+
+.our-courses .courses-headline {
+  font: 1.2em "TrebuchetMS", sans-serif;
+  color: #4C7689;
+  letter-spacing: 10px;
+  border-bottom: 1px solid #4C7689; }
+.our-courses .courses-item-headline {
+  font: 1.2em "TrebuchetMS", sans-serif;
+  color: #F03178; }
+  .our-courses .courses-item-headline:hover {
+    color: #F2743E; }
+.our-courses .courses-item-text {
+  font-size: 0.8em;
+  color: #4C7689; }
+
+.sponsors {
+  border-bottom: 1px solid #4C7689; }
+  .sponsors .sponsors-headline {
+    font: 1.2em "TrebuchetMS", sans-serif;
+    color: #4C7689;
+    letter-spacing: 5px;
+    border-bottom: 1px solid #4C7689; }
+
+footer .footer-nav-item {
+  font-size: 1em;
+  font-weight: 700;
+  color: #4C7689; }
+  footer .footer-nav-item:hover {
+    color: #E1215F; }
+footer .footer-copyright {
+  font-size: 1em;
+  font-weight: 700;
+  color: #4C7689;
+  opacity: 0.5; }
 
 /*# sourceMappingURL=style.css.map */

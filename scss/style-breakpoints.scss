@@ -1,21 +1,71 @@
 @import "mixins";
 @import "variables";
 @media (min-width: 576px) {
-
-}
-
-@media (min-width: 768px) {
-
   .bg-section {
     .section-title {
-      width: 40%;
+      width: 90%;
       .headline {
         font-size: $bigger;
       }
     }
   }
 }
-
+@media (min-width: 768px) {
+  .bg-section {
+    .section-title {
+      width: 80%;
+      .headline {
+        font-size: $bigger;
+      }
+    }
+  }
+  .our-courses {
+    .courses-headline {
+      font-size: $big;
+    }
+  }
+  .sponsors {
+    .sponsors-headline {
+font-size: $normal;
+    }
+  }
+}
+@media (min-width: 992px) {
+  header {
+    .navigation {
+      .menu-item {
+        font-size: $normal;
+      }
+    }
+  }
+  .bg-section {
+    .section-title {
+      width: 60%;
+    }
+  }
+  .our-courses {
+    .courses-item-headline {
+      font-size: $big;
+    }
+    .courses-item-text {
+      font-size: $normal;
+    }
+  }
+}
 @media (min-width: 1200px) {
-
+  .bg-section {
+    .section-title {
+      width: 50%;
+    }
+  }
+  .courses {
+    .courses-gh {
+      padding: 0 16%;
+    }
+  }
+  .sponsors {
+    .sponsors-headline {
+      font-size: $big;
+    }
+  }
 }

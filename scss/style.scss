@@ -5,16 +5,13 @@
   padding: 0;
   margin: 0;
 }
-
-
-
 header {
   background-color: transparent;
   padding: 2% 0;
-  position: relative;
+  position: absolute;
+  width: 100%;
   z-index: 1;
 }
-
 header {
   .active-nav {
     color: $active;
@@ -22,9 +19,7 @@ header {
   .line {
     border-bottom: 2px solid $line;
   }
-
   .icons {
-    display: none;
     .header-icons {
       width: 23px;
       height: 23px;
@@ -36,9 +31,7 @@ header {
       border-radius: 100%;
       opacity: 0.7;
       transition: all .3s linear;
-
       &:hover {
-        color: $active;
         opacity: 1;
       }
     }
@@ -58,9 +51,10 @@ header {
 
     .menu-item {
       font-family: 'PT Sans', sans-serif;
-      font-size: $normal;
+      font-size: $small;
       text-transform: uppercase;
       color: $color;
+      transition: all .3s linear;
 
       &:hover {
         color: $active;
@@ -70,21 +64,18 @@ header {
 }
 
 .bg-section {
-  background-image: url("../img/layer_5.png");
-  height: 50vh;
-  position: absolute;
-  top: 0;
-  overflow: hidden;
+  background: url("../img/bg.png") no-repeat center top/cover;
+  height: 80vh;
 
   .section-title {
     position: relative;
-    top: 40%;
+    top: 45%;
     .headline {
       font-family: 'TrebuchetMS', sans-serif;
       font-size: $big;
       font-weight: 700;
       color: $headline;
-      text-shadow: 0 2px 0 $white;
+      text-shadow: 0 2px 0 $shadow;
     }
     .section-btn {
       font-family: 'TrebuchetMS', sans-serif;
@@ -92,29 +83,26 @@ header {
       font-weight: 700;
       color: $white;
       background-color: $btn;
-      padding: 10px 50px;
+      padding: 10px 45px;
       border: 1px solid $btn;
       border-radius: 30px;
+      transition: all .3s linear;
       &:hover {
         color: $active;
-        background-color: $color;
+        background-color: $active-btn;
+        border: 1px solid $active-btn;
       }
     }
   }
 }
 
 .courses {
-  position: relative;
-  top: 35%;
-
   .courses-gh {
-    width: 70%;
+    padding: 0 5%;
     .courses-text {
       font-size: $normal;
       color: $text;
-      text-align: justify;
     }
-
     .gh {
       font-size: $normal;
       font-weight: 700;
@@ -122,4 +110,47 @@ header {
     }
   }
 }
-
+.our-courses {
+  .courses-headline {
+    font: $normal-plus 'TrebuchetMS', sans-serif;
+    color: $text;
+    letter-spacing: 10px;
+    border-bottom: 1px solid $text;
+  }
+  .courses-item-headline {
+    font: $normal-plus 'TrebuchetMS', sans-serif;
+    color: $courses-headline;
+    &:hover {
+      color: $active-btn;
+    }
+  }
+  .courses-item-text {
+    font-size: $small;
+    color: $text;
+  }
+}
+.sponsors {
+  border-bottom: 1px solid $text;
+  .sponsors-headline {
+    font: $normal-plus 'TrebuchetMS', sans-serif;
+    color: $text;
+    letter-spacing: 5px;
+    border-bottom: 1px solid $text;
+  }
+}
+footer {
+  .footer-nav-item {
+    font-size: $normal;
+    font-weight: 700;
+    color: $text;
+    &:hover {
+      color: $active;
+    }
+  }
+  .footer-copyright {
+    font-size: $normal;
+    font-weight: 700;
+    color: $text;
+    opacity: 0.5;
+  }
+}
