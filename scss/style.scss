@@ -9,11 +9,40 @@
 
 
 header {
-  background-color: whitesmoke;
+  background-color: transparent;
   padding: 2% 0;
+  position: relative;
+  z-index: 1;
 }
 
 header {
+  .active-nav {
+    color: $active;
+  }
+  .line {
+    border-bottom: 2px solid $line;
+  }
+
+  .icons {
+    display: none;
+    .header-icons {
+      width: 23px;
+      height: 23px;
+      color: $white;
+      background-color: $line;
+      padding: 5px 5px 3px;
+      margin-right: 10px;
+      border: 1px solid $line;
+      border-radius: 100%;
+      opacity: 0.7;
+      transition: all .3s linear;
+
+      &:hover {
+        color: $active;
+        opacity: 1;
+      }
+    }
+  }
   .navbar-toggler {
     &:active, &:focus {
       outline: none;
@@ -24,26 +53,72 @@ header {
     font-size: 2em;
   }
 
-  .active-nav {
-    background-color: grey;
-  }
-
   .navigation {
     margin: 0 5px 10px;
 
-    &:hover {
-      background-color: grey;
-    }
-
     .menu-item {
-      font-size: 16px;
+      font-family: 'PT Sans', sans-serif;
+      font-size: $normal;
       text-transform: uppercase;
-      color: black;
+      color: $color;
 
       &:hover {
-        background-color: grey;
-        color: white;
+        color: $active;
       }
+    }
+  }
+}
+
+.bg-section {
+  background-image: url("../img/layer_5.png");
+  height: 50vh;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+
+  .section-title {
+    position: relative;
+    top: 40%;
+    .headline {
+      font-family: 'TrebuchetMS', sans-serif;
+      font-size: $big;
+      font-weight: 700;
+      color: $headline;
+      text-shadow: 0 2px 0 $white;
+    }
+    .section-btn {
+      font-family: 'TrebuchetMS', sans-serif;
+      font-size: $big;
+      font-weight: 700;
+      color: $white;
+      background-color: $btn;
+      padding: 10px 50px;
+      border: 1px solid $btn;
+      border-radius: 30px;
+      &:hover {
+        color: $active;
+        background-color: $color;
+      }
+    }
+  }
+}
+
+.courses {
+  position: relative;
+  top: 35%;
+
+  .courses-gh {
+    width: 70%;
+    .courses-text {
+      font-size: $normal;
+      color: $text;
+      text-align: justify;
+    }
+
+    .gh {
+      font-size: $normal;
+      font-weight: 700;
+      color: $text;
     }
   }
 }

@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AAIA,yBAA0B;EAEtB,iBAAW;IACT,OAAO,EAAE,QAAQ",
-"sources": ["style-breakpoints.scss"],
+"mappings": "AAMA,yBAA0B;EAGtB,0BAAe;IACb,KAAK,EAAE,GAAG;IACV,oCAAU;MACR,SAAS,ECSR,GAAG",
+"sources": ["style-breakpoints.scss","_variables.scss"],
 "names": [],
 "file": "style-breakpoints.css"
 }
