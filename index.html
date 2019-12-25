@@ -25,11 +25,11 @@
             </button>
             <div id="navbarCollapse" class="collapse navbar-collapse row">
                 <ul class="icons d-flex justify-content-center align-items-center pt-3 pt-md-0 col-md-5 col-xl-7">
-                    <li><a href="#" class="icon-facebook header-icons"></a></li>
-                    <li><a href="#" class="icon-social-blogger header-icons"></a></li>
-                    <li><a href="#" class="icon-twitter header-icons"></a></li>
-                    <li><a href="#" class="icon-youtube header-icons"></a></li>
-                    <li><a href="#" class="icon-google-plus header-icons"></a></li>
+                    <li><a href="#" class="icon-facebook header-icons facebook"></a></li>
+                    <li><a href="#" class="icon-vkontakte header-icons vkontakte"></a></li>
+                    <li><a href="#" class="icon-twitter header-icons twitter"></a></li>
+                    <li><a href="#" class="icon-youtube header-icons youtube"></a></li>
+                    <li><a href="#" class="icon-social-vimeo header-icons vimeo"></a></li>
                 </ul>
                 <ul class="navbar-nav text-center pt-3 mx-auto ml-md-auto pt-md-0">
                     <li class="navigation nav-item active-nav">
@@ -51,13 +51,13 @@
 <section class="container-fluid bg-section">
     <div class="section-title mx-auto text-center">
         <h2 class="headline d-block mb-5">Реєстрація на другий сезон відкрита!</h2>
-        <a href="#" class="section-btn">Зареєструватися</a>
+        <a href="#" class="registration-btn d-inline-block">Зареєструватися</a>
     </div>
 </section>
 <section class="courses py-5">
     <div class="container">
         <div class="courses-gh mx-auto">
-            <p class="courses-text"><span class="gh">GeekHub — </span>це проект, що надає можливість отримати практичні
+            <p class="courses-text"><span class="gh">GeekHub</span> — це проект, що надає можливість отримати практичні
                 знання та навички в сфері розробки програмного забезпечення. На відміну від традиційної освіти,
                 викладачі GeekHub працюють з новітніми технологіями у провідних софтверних компаніях, тому слухачі
                 GeekHub отримують тільки актуальні знання. Якщо ти зацікавлений — запрошуємо ознайомитись з деталями
@@ -203,24 +203,40 @@
 <section>
     <div class="container">
         <ul class="row indent d-flex justify-content-center sponsors pb-5">
-            <li class="col-12 col-md-4 mt-4">
-                <picture>
-                    <source srcset="img/sponsors2.webp" type="image/webp">
-                    <img src="img/sponsors2.png" alt="Courses picture" class="img-fluid card-img">
-                </picture>
+            <li class="col-12 col-md-4 mt-4 d-flex justify-content-center">
+                <div class="sponsors-block">
+                    <a href="#">
+                        <picture>
+                            <source srcset="img/sponsors2.webp" type="image/webp">
+                            <img src="img/sponsors2.png" alt="Sponsors picture" class="img-fluid card-img">
+                        </picture>
+                    </a>
+                </div>
             </li>
-            <li class="col-12 col-md-4 mt-4">
-                <picture>
-                    <source srcset="img/sponsors1.webp" type="image/webp">
-                    <img src="img/sponsors1.png" alt="Courses picture" class="img-fluid card-img">
-                </picture>
+            <li class="col-12 col-md-4 mt-4 d-flex justify-content-center">
+                <div class="sponsors-layer-one sponsors-block">
+                    <a href="#">
+                        <picture>
+                            <source srcset="img/sponsors1.webp" type="image/webp">
+                            <img src="img/sponsors1.png" alt="Sponsors picture" class="sponsors-layer-one img-fluid card-img">
+                        </picture>
+                        <picture>
+                            <source srcset="img/sponsors1-2.webp" type="image/webp">
+                            <img src="img/sponsors1-2.png" alt="Sponsors picture" class="sponsors-layer-two">
+                        </picture>
+                    </a>
+                </div>
             </li>
-            <li class="col-12 col-md-4 mt-4">
-                <h4 class="sponsors-headline text-center pb-3">Наши спонсоры</h4>
-                <picture>
-                    <source srcset="img/sponsors3.webp" type="image/webp">
-                    <img src="img/sponsors3.png" alt="Courses picture" class="img-fluid card-img mt-4 mt-md-1 mt-lg-4">
-                </picture>
+            <li class="col-12 col-md-4 mt-4 d-flex justify-content-center">
+                <div class="sponsors-block">
+                    <h4 class="sponsors-headline text-center pb-3">Наши спонсоры</h4>
+                    <a href="#">
+                        <picture>
+                            <source srcset="img/sponsors3.webp" type="image/webp">
+                            <img src="img/sponsors3.png" alt="Sponsors picture" class="mt-4 mt-md-1 mt-lg-4 img-fluid card-img">
+                        </picture>
+                    </a>
+                </div>
             </li>
         </ul>
     </div>
@@ -230,8 +246,8 @@
         <ul class="row d-flex justify-content-md-between">
             <li class="col-12 col-md-8 col-lg-4">
                 <ul class="row flex-column flex-md-row justify-content-md-start">
-                    <li class="col-12 text-center pt-3 col-md-3">
-                        <a href="#" class="footer-nav-item text-uppercase">Главная</a>
+                    <li class="col-12 text-center pt-3 col-md-3 active-nav">
+                        <a href="#" class="footer-nav-item text-uppercase active-nav">Главная</a>
                     </li>
                     <li class="col-12 text-center pt-3 col-md-3">
                         <a href="#" class="footer-nav-item text-uppercase">geekhub</a>

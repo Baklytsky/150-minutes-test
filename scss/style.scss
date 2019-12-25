@@ -13,9 +13,6 @@ header {
   z-index: 1;
 }
 header {
-  .active-nav {
-    color: $active;
-  }
   .line {
     border-bottom: 2px solid $line;
   }
@@ -25,7 +22,7 @@ header {
       height: 23px;
       color: $white;
       background-color: $line;
-      padding: 5px 5px 3px;
+      padding: 5px 5px 0;
       margin-right: 10px;
       border: 1px solid $line;
       border-radius: 100%;
@@ -33,6 +30,31 @@ header {
       transition: all .3s linear;
       &:hover {
         opacity: 1;
+      }
+    }
+    .facebook {
+      &:hover {
+        background-color: $facebook;
+      }
+    }
+    .vkontakte {
+      &:hover {
+        background-color: $vk;
+      }
+    }
+    .twitter {
+      &:hover {
+        background-color: $twitter;
+      }
+    }
+    .youtube {
+      &:hover {
+        background-color: $youtube;
+      }
+    }
+    .vimeo {
+      &:hover {
+        background-color: $vimeo;
       }
     }
   }
@@ -50,7 +72,8 @@ header {
     margin: 0 5px 10px;
 
     .menu-item {
-      font-family: 'PT Sans', sans-serif;
+      font-family: PT Sans, sans-serif;
+      font-weight: 700;
       font-size: $small;
       text-transform: uppercase;
       color: $color;
@@ -59,6 +82,9 @@ header {
       &:hover {
         color: $active;
       }
+    }
+    .active-nav {
+      color: $active;
     }
   }
 }
@@ -77,20 +103,17 @@ header {
       color: $headline;
       text-shadow: 0 2px 0 $shadow;
     }
-    .section-btn {
+    .registration-btn {
       font-family: 'TrebuchetMS', sans-serif;
-      font-size: $big;
+      font-size: $normal;
       font-weight: 700;
       color: $white;
-      background-color: $btn;
-      padding: 10px 45px;
-      border: 1px solid $btn;
-      border-radius: 30px;
       transition: all .3s linear;
+      background: url("../img/img-button.png") no-repeat center/cover;
+      padding: 25px 75px;
       &:hover {
-        color: $active;
-        background-color: $active-btn;
-        border: 1px solid $active-btn;
+        color: $headline;
+        text-shadow: 0 1px 0 $active;
       }
     }
   }
@@ -137,6 +160,18 @@ header {
     letter-spacing: 5px;
     border-bottom: 1px solid $text;
   }
+  .sponsors-block {
+    width: 270px;
+  }
+  .sponsors-layer-one {
+    position: relative;
+  }
+  .sponsors-layer-two {
+    width: 140px;
+    position: absolute;
+    top: -20px;
+    left: 25%;
+  }
 }
 footer {
   .footer-nav-item {
@@ -146,6 +181,9 @@ footer {
     &:hover {
       color: $active;
     }
+  }
+  .active-nav {
+    color: $active;
   }
   .footer-copyright {
     font-size: $normal;

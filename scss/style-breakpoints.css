@@ -2,7 +2,10 @@
   .bg-section .section-title {
     width: 90%; }
     .bg-section .section-title .headline {
-      font-size: 3em; } }
+      font-size: 3em; }
+    .bg-section .section-title .registration-btn {
+      font-size: 1.5em;
+      padding: 30px 80px; } }
 @media (min-width: 768px) {
   .bg-section .section-title {
     width: 80%; }
@@ -13,7 +16,11 @@
     font-size: 1.5em; }
 
   .sponsors .sponsors-headline {
-    font-size: 1em; } }
+    font-size: 1em; }
+  .sponsors .sponsors-block {
+    width: 200px; }
+  .sponsors .sponsors-layer-two {
+    width: 100px; } }
 @media (min-width: 992px) {
   header .navigation .menu-item {
     font-size: 1em; }
@@ -24,7 +31,12 @@
   .our-courses .courses-item-headline {
     font-size: 1.5em; }
   .our-courses .courses-item-text {
-    font-size: 1em; } }
+    font-size: 1em; }
+
+  .sponsors .sponsors-block {
+    width: 250px; }
+  .sponsors .sponsors-layer-two {
+    width: 125px; } }
 @media (min-width: 1200px) {
   .bg-section .section-title {
     width: 50%; }
@@ -33,6 +45,11 @@
     padding: 0 16%; }
 
   .sponsors .sponsors-headline {
-    font-size: 1.5em; } }
+    font-size: 1.5em; }
+
+  .sponsors .sponsors-block {
+    width: 350px; }
+  .sponsors .sponsors-layer-two {
+    width: 175px; } }
 
 /*# sourceMappingURL=style-breakpoints.css.map */

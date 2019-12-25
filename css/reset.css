@@ -1,7 +1,11 @@
 /*----------------------------------------------------------------------------------//
 //------------------------------RESET DEFAULT STYLES--------------------------------//
 //----------------------------------------------------------------------------------*/
-@import url('https://fonts.googleapis.com/css?family=PT+Sans:700&display=swap&subset=cyrillic');
+
+@import "http://fonts.fontstorage.com/import/ptsans.css";
+/*
+	PT Sans, 400, 400 italic, 700, 700 italic
+*/
 
 @font-face {
     font-family: "TrebuchetMS";

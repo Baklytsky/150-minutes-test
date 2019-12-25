@@ -4,8 +4,14 @@
   .bg-section {
     .section-title {
       width: 90%;
+
       .headline {
         font-size: $bigger;
+      }
+
+      .registration-btn {
+        font-size: $big;
+        padding: 30px 80px;
       }
     }
   }
@@ -26,7 +32,13 @@
   }
   .sponsors {
     .sponsors-headline {
-font-size: $normal;
+      font-size: $normal;
+    }
+    .sponsors-block {
+      width: 200px;
+    }
+    .sponsors-layer-two {
+      width: 100px;
     }
   }
 }
@@ -51,6 +63,14 @@ font-size: $normal;
       font-size: $normal;
     }
   }
+  .sponsors {
+    .sponsors-block {
+      width: 250px;
+    }
+    .sponsors-layer-two {
+      width: 125px;
+    }
+  }
 }
 @media (min-width: 1200px) {
   .bg-section {
@@ -66,6 +86,14 @@ font-size: $normal;
   .sponsors {
     .sponsors-headline {
       font-size: $big;
+    }
+  }
+  .sponsors {
+    .sponsors-block {
+      width: 350px;
+    }
+    .sponsors-layer-two {
+      width: 175px;
     }
   }
 }

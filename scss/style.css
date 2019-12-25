@@ -9,8 +9,6 @@ header {
   width: 100%;
   z-index: 1; }
 
-header .active-nav {
-  color: #E1215F; }
 header .line {
   border-bottom: 2px solid #CACACA; }
 header .icons .header-icons {
@@ -18,7 +16,7 @@ header .icons .header-icons {
   height: 23px;
   color: #FFF;
   background-color: #CACACA;
-  padding: 5px 5px 3px;
+  padding: 5px 5px 0;
   margin-right: 10px;
   border: 1px solid #CACACA;
   border-radius: 100%;
@@ -26,6 +24,16 @@ header .icons .header-icons {
   transition: all .3s linear; }
   header .icons .header-icons:hover {
     opacity: 1; }
+header .icons .facebook:hover {
+  background-color: #3B5998; }
+header .icons .vkontakte:hover {
+  background-color: #45668E; }
+header .icons .twitter:hover {
+  background-color: #1DA1F2; }
+header .icons .youtube:hover {
+  background-color: #FF0000; }
+header .icons .vimeo:hover {
+  background-color: #162221; }
 header .navbar-toggler:active, header .navbar-toggler:focus {
   outline: none; }
 header .icon-three-bars {
@@ -34,13 +42,16 @@ header .icon-three-bars {
 header .navigation {
   margin: 0 5px 10px; }
   header .navigation .menu-item {
-    font-family: 'PT Sans', sans-serif;
+    font-family: PT Sans, sans-serif;
+    font-weight: 700;
     font-size: 0.8em;
     text-transform: uppercase;
     color: #465A64;
     transition: all .3s linear; }
     header .navigation .menu-item:hover {
       color: #E1215F; }
+  header .navigation .active-nav {
+    color: #E1215F; }
 
 .bg-section {
   background: url("../img/bg.png") no-repeat center top/cover;
@@ -54,20 +65,17 @@ header .navigation {
       font-weight: 700;
       color: #256988;
       text-shadow: 0 2px 0 #C6CDB5; }
-    .bg-section .section-title .section-btn {
+    .bg-section .section-title .registration-btn {
       font-family: 'TrebuchetMS', sans-serif;
-      font-size: 1.5em;
+      font-size: 1em;
       font-weight: 700;
       color: #FFF;
-      background-color: #EF3C83;
-      padding: 10px 45px;
-      border: 1px solid #EF3C83;
-      border-radius: 30px;
-      transition: all .3s linear; }
-      .bg-section .section-title .section-btn:hover {
-        color: #E1215F;
-        background-color: #F2743E;
-        border: 1px solid #F2743E; }
+      transition: all .3s linear;
+      background: url("../img/img-button.png") no-repeat center/cover;
+      padding: 25px 75px; }
+      .bg-section .section-title .registration-btn:hover {
+        color: #256988;
+        text-shadow: 0 1px 0 #E1215F; }
 
 .courses .courses-gh {
   padding: 0 5%; }
@@ -100,6 +108,15 @@ header .navigation {
     color: #4C7689;
     letter-spacing: 5px;
     border-bottom: 1px solid #4C7689; }
+  .sponsors .sponsors-block {
+    width: 270px; }
+  .sponsors .sponsors-layer-one {
+    position: relative; }
+  .sponsors .sponsors-layer-two {
+    width: 140px;
+    position: absolute;
+    top: -20px;
+    left: 25%; }
 
 footer .footer-nav-item {
   font-size: 1em;
@@ -107,6 +124,8 @@ footer .footer-nav-item {
   color: #4C7689; }
   footer .footer-nav-item:hover {
     color: #E1215F; }
+footer .active-nav {
+  color: #E1215F; }
 footer .footer-copyright {
   font-size: 1em;
   font-weight: 700;
